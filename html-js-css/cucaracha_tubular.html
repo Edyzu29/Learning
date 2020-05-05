@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculadora espacial</title>
+    </head>
+
+    <body>
+        <h1>Tu peso en <strong>diversos planetas</strong></h1>
+        <p> Sabias que el peso depende de la gravedad del planeta en el cual estas</p>
+        <script>
+        var place= prompt("dime en que planeta estas, \r\n 1 para jupiter y 2 para Venus");
+        var peso= prompt("dime tu peso");
+        var tuput0= 9.81;
+        var tuput1= 15.2;
+        var tuput2= 6.25;
+        var peso_final;
+
+         place = parseInt(place);
+         peso  = parseInt(peso);
+
+        if(place == 1){
+            peso_final=peso* tuput1 / tuput0;
+            document.write("Tu peso en Jupiter es " + parseInt(peso_final) + " <strong> kilos </strong>");
+
+        }else if(place == 2){
+            peso_final=peso* tuput2 / tuput0;
+            document.write("Tu peso en Venus es " + parseInt(peso_final) + " <strong> kilos </strong>");
+
+        }else{
+            peso_final=1000;
+            document.write("Tu peso es " + parseInt(peso_final) + "<strong> kilos </strong>");
+        }
+        </script>
+    </body>
+</html>
