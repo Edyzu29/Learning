@@ -1,3 +1,5 @@
+import model.Camara
+
 fun main(args: Array<String>) {
 
 
@@ -34,7 +36,7 @@ fun main(args: Array<String>) {
 
     var IndiceDeRecetas:ArrayList<Int> = arrayListOf(0)
     IndiceDeRecetas.add(12)
-    var j:String?= readLine()
+    var j:String?= "pepipto"
     when{
         j.equals("j") -> {
             println(j)
@@ -51,8 +53,40 @@ val pepeitp="""
 
     println(pepeitp)
 
+    //CLASESE CHE BOLUDASO
+    var Kañon=Camara()
+    Kañon.setZoom(3)
+    Kañon.setResolution(1080)
+    Kañon.setFocus("Si esta con focus che boludo")
+    Kañon.setTurnOn(true)
+
+    Kañon.mostrarTodo()
+
+    println("Pepipot -> ${calculation(2,3,54, ::suma)}")
+    println("Pepipot -> ${calculation(2,3,54, ::resta)}")
+    println("Pepipot -> ${calculation(2,3,54, ::multiplicacion)}")
+    println("Pepipot -> ${calculation(2100,105,54, ::division)}")
+
+    val lacucaracha:Any= listOf("pwpw", 4,1.222, "pepito el chocolatero")
+    val juancito = hashMapOf("pepe" to 1, 50 to 20)
+
+    println(juancito)
+}
+
+fun calculation(a:Int, b:Int, c:Int, peracion:(Int,Int,Int) -> Int ):Int{
+    return peracion(a,b,c)
+
 
 }
+
+fun suma(a:Int,b:Int,c:Int) = a+b+c
+fun resta(a:Int,b:Int,c:Int) = a-b-c
+fun multiplicacion(a:Int,b:Int,c:Int) = a*b*c
+fun division(a:Int,b:Int,c:Int) = (a/b)%c
+
+val pepepepe = a[1,2,3]
+
+
 
 /*
 * Expresión 	Función 	Se traduce a

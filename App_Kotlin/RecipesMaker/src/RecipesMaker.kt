@@ -128,3 +128,7 @@ fun viewRecipes() {
         }
     }
 }
+
+open class Pepito
+
+val Julito = Pepito()
